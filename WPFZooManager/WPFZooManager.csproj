@@ -56,10 +56,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ZooDataSet.cs">
+      <DependentUpon>ZooDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ZooDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ZooDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZooDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZooDataSet1.xsd</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +114,17 @@
     </None>
     <None Include="ZooDataSet.xss">
       <DependentUpon>ZooDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZooDataSet1.xsc">
+      <DependentUpon>ZooDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZooDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZooDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZooDataSet1.xss">
+      <DependentUpon>ZooDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
